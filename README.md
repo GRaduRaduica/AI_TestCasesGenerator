@@ -1,6 +1,7 @@
-# BATG
+# AI TestCase Generator
 AI TestCase Generator
 
+##I am assuming you know how to set your own venv and install requirements as per requirements.txt
 
 Using different AI APIs (from huggingface interface) this project enables more than one input interaction with AI, extracting more information in a faster manner. 
 
