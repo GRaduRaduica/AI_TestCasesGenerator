@@ -1,17 +1,17 @@
 """
-needed to create a json file to be saved locally to grab the
+Needed to create a json file to be saved locally to grab the
 """
 
 import json
 
-class Json_Worker():
 
-    def __init__(self, save_loc: str, dict_data: dict):
+class JsonWorker:
+
+    def __init__(self, save_loc: str):
         self.save_location = save_loc
-        self.content_json = dict_data
 
-    def write_json(self):
-        json_dict = json.dumps(self.content_json, indent=4)
+    def write_json(self, content: dict):
+        json_dict = json.dumps(content, indent=4)
         with open(self.save_location, 'w') as file:
             file.write(json_dict)
 

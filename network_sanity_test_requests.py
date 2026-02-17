@@ -30,14 +30,14 @@ def test_proxy():
         response = requests.get("https://catfact.ninja/fact", proxies=proxies, timeout=10)
         response.raise_for_status()
         fun_fact = response.json().get("fact")
-        print(f"✅ Proxy is working. Your cat fact is : {fun_fact}")
+        print(f"Proxy is working. Your cat fact is : {fun_fact}")
         return True
     except requests.exceptions.ProxyError as e:
-        print("❌ Proxy error:", e)
+        print("Proxy error:", e)
     except requests.exceptions.ConnectTimeout:
-        print("❌ Proxy timed out.")
+        print("Proxy timed out.")
     except Exception as e:
-        print("❌ Other error:", e)
+        print("Other error:", e)
     return False
 
 if __name__ == '__main__':
