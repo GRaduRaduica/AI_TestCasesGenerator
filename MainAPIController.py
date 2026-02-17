@@ -1,5 +1,5 @@
 from helpers.excelreader import ExcelReader
-from helpers.json_helper import JsonWorker, TC_FIELDS
+from helpers.json_helper import JsonWorker
 from static_data import Constants_API
 from helpers.file_dir_finder import *
 from helpers.prompts import *
